@@ -1,0 +1,85 @@
+@import url('./variables.css');
+
+/*Contenedor navbar*/
+.encabezado {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px var(--border-color-n);
+}
+
+/*Logo*/
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-icono {
+    width: 45px;
+    height: 50px;
+    border: 2px solid var(--border-color-b);
+    border-radius: 5px 5px 18px 18px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.logo-icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-letra);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/*Menu*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.menu a {
+    color: var(--color-letra);
+    text-decoration: none;
+    font-size: 12px;
+    border-right: 1px solid var(--color-dorado);
+    padding-right: 10px;
+}
+.menu a:hover {
+    color: var(--color-dorado);
+}
+
+/*Responsive Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .encabezado {
+        padding: 15px 4%;
+    }
+    .menu {
+        gap: 8px;
+    }
+}
+
+/*Responsive Celulares*/
+@media (max-width: 767px) {
+    .encabezado {
+        justify-content: center;
+    }
+    .menu {
+        width: 100%;
+        gap: 10px;
+    }
+}

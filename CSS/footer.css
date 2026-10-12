@@ -1,0 +1,76 @@
+@import url('./variables.css');
+
+/*Contenedor footer*/
+.pie {
+    width: 100%;
+    padding: 25px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--bg-color-tarjeta);
+    border-top: 1px solid var(--border-color-n);
+}
+/*Imagen*/
+.logo-pie {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 2px solid var(--border-color-b);
+    border-radius: 5px 5px 16px 16px;
+    flex-shrink: 0;
+}
+.logo-pie img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/*Info contacto*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contacto p {
+    margin: 0;
+    color: var(--color-letra);
+    font-size: 16px;
+}
+/*Derechos*/
+.derechos {
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color-n);
+    text-align: center;
+}
+.derechos p {
+    margin: 0;
+    color: var(--color-letra);
+    font-size: 12px;
+}
+
+/*Responsive Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pie {
+        padding: 20px 4%;
+    }
+}
+
+/*Responsive moviles*/
+@media (max-width: 600px) {
+    .pie {
+        justify-content: center;
+        text-align: center;
+    }
+    .contacto {
+        align-items: center;
+    }
+    .derechos {
+        text-align: center;
+    }
+}

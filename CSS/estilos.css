@@ -1,0 +1,314 @@
+@import url('./variables.css');
+/*Contenedor main*/
+.contenedor {
+    width: 92%;
+    max-width: 850px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/*Presentacion abogados*/
+.portada {
+    width: 100%;
+    min-height: 240px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: var(--bg-color-tarjeta);
+    border: 2px solid var(--border-color-n);
+}
+.abogados {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--color-dorado);
+}
+.abogados img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
+}
+.portada-texto h2 {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: var(--color-letra);
+}
+.etiqueta {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 14px;
+    text-decoration: none;
+    background-color: var(--color-dorado);
+    color: var(--bg-color-tarjeta);
+    border-radius: 4px;
+    font-size: 10px;
+    box-shadow: 0 2px 4px var(--border-color-n);
+}
+
+/*Configuracion Tarjetas*/
+.tarjeta {
+    width: 88%;
+    margin: 0 auto;
+    padding: 22px;
+    background-color: var(--bg-color-tarjeta);
+    border-radius: 7px;
+    box-shadow: 0 2px 6px var(--border-color-n);
+}
+.tarjeta h3 {
+    margin-bottom: 15px;
+    color: var(--color-letra);
+    font-size: 14px;
+    font-weight: normal;
+}
+.tarjeta h3::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: var(--color-dorado);
+}
+
+/*Quienes Somos*/
+.historia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.texto {
+    flex: 1;
+}
+.texto p {
+    color: var(--color-letra);
+    font-size: 12px;
+    line-height: 1.7;
+}
+.imagen-equipo {
+    width: 42%;
+    min-height: 130px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.imagen-equipo img {
+    width: 100%;
+    height: 100%;
+    min-height: 130px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+
+/*Especialidades*/
+.elementos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+.elemento {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+}
+.icono {
+    color: var(--color-dorado);
+    font-size: 30px;
+}
+.elemento strong {
+    color: var(--color-letra);
+    font-size: 11px;
+    font-weight: bold;
+}
+.elemento:hover .icono {
+    color: var(--border-color-b);
+}
+
+/*Horarios*/
+.horarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.horario {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.horario strong {
+    display: block;
+    color: var(--color-letra);
+    font-size: 12px;
+    font-weight: bold;
+}
+.horario p {
+    margin-top: 5px;
+    color: var(--color-letra);
+    font-size: 11px;
+}
+.horario .icono {
+    font-size: 27px;
+}
+.reloj {
+    display: block;
+    margin-top: 5px;
+    color: var(--color-dorado);
+    text-align: center;
+    font-size: 28px;
+}
+
+/*Ubicacion*/
+.ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.mapa {
+    position: relative;
+    flex: 1.5;
+    min-width: 0;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color-n);
+}
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+.ubicacion p {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    color: var(--color-letra);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/*Preguntas Frecuentes*/
+.titulo-centrado {
+    text-align: center;
+}
+.tarjeta .titulo-centrado::after {
+    margin-right: auto;
+    margin-left: auto;
+}
+details {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--bg-color);
+    color: var(--color-letra);
+    font-size: 12px;
+}
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    cursor: pointer;
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::after {
+    content: "+";
+    color: var(--color-dorado);
+    font-size: 18px;
+}
+details[open] summary::after {
+    content: "-";
+}
+details p {
+    margin-top: 12px;
+    color: var(--color-gris);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/*Responsive Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .elementos {
+        flex-wrap: wrap;
+    }
+    .elemento {
+        flex: 1 1 20%;
+    }
+    .horarios {
+        gap: 25px;
+    }
+    .ubicacion p {
+        font-size: 14px;
+    }
+}
+
+/*Responsive Celulares*/
+@media (max-width: 767px) {
+    .portada {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .portada-texto h2 {
+        font-size: 23px;
+    }
+    .tarjeta {
+        width: 100%;
+        padding: 18px;
+    }
+    .historia {
+        flex-direction: column;
+    }
+    .imagen-equipo {
+        width: 100%;
+    }
+    .elementos {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .elemento {
+        flex: 1 1 40%;
+    }
+    .horarios {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .ubicacion {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .mapa {
+        width: 100%;
+        height: 220px;
+        flex: none;
+    }
+    .ubicacion p {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+}
