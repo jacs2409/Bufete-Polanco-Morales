@@ -1,0 +1,116 @@
+@import url('./variables.css');
+
+/*pagina*/
+.galeria-pagina {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 45px 6% 60px;
+}
+
+/*encabezado*/
+.galeria-encabezado {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.galeria-encabezado h1 {
+    margin: 0 0 15px;
+    color: var(--color-letra);
+    font-size: clamp(28px, 4vw, 42px);
+}
+.galeria-encabezado p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-letra);
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+.galeria-linea {
+    width: 65px;
+    height: 3px;
+    margin: 22px auto 0;
+    background-color: var(--border-color-b);
+    border-radius: 3px;
+}
+
+/*galeria*/
+.galeria-masonry {
+    columns: 4 220px;
+    column-gap: 20px;
+}
+
+/*tarjetas de las fotos*/
+.foto-card {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0;
+    overflow: hidden;
+    break-inside: avoid;
+    background-color: var(--bg-color-tarjeta);
+    border: 1px solid var(--border-color-n);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+.foto-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+/*efectos del cursor*/
+.foto-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-color-b);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.foto-card:hover img {
+    transform: scale(1.035);
+}
+
+/*responsive tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .galeria-pagina {
+        padding: 35px 4% 45px;
+    }
+    .galeria-masonry {
+        columns: 3 180px;
+        column-gap: 16px;
+    }
+    .foto-card {
+        margin-bottom: 16px;
+    }
+}
+
+/*responsive celulares*/
+@media (max-width: 600px) {
+    .galeria-pagina {
+        padding: 30px 16px 40px;
+    }
+    .galeria-encabezado {
+        margin-bottom: 28px;
+    }
+    .galeria-encabezado h1 {
+        font-size: 28px;
+    }
+    .galeria-encabezado p {
+        font-size: 14px;
+    }
+    .galeria-masonry {
+        columns: 2 130px;
+        column-gap: 12px;
+    }
+    .foto-card {
+        margin-bottom: 12px;
+        border-radius: 6px;
+    }
+}
