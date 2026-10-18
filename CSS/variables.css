@@ -7,6 +7,9 @@
     --border-color-b: #304655;
     --color-dorado: #ad9560;
     --color-gris: #666666;
+    --color-azul-oscuro: #243746;
+    --color-azul-claro: #eaf0f3;
+    --sombra: 0 2px 8px var(--border-color-n);
 }
 
 * {

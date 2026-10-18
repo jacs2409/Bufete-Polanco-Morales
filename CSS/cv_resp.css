@@ -1,0 +1,311 @@
+@import url('./variables.css');
+
+
+/*Responsive tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*contenedor*/
+    .contenedor {
+        width: 94%;
+        margin: 25px auto;
+        gap: 18px;
+    }
+    /*introduccion*/
+    .portada {
+        min-height: 250px;
+        padding: 25px;
+        gap: 25px;
+    }
+    .foto-perfil {
+        width: 175px;
+        height: 205px;
+    }
+    .portada-texto h1 {
+        font-size: 28px;
+    }
+    .cargo {
+        font-size: 13px;
+    }
+    /*indicadores*/
+    .indicadores {
+        gap: 10px;
+    }
+    .indicador {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+    .indicador > i {
+        font-size: 23px;
+    }
+    .indicador strong {
+        font-size: 17px;
+    }
+    .indicador span {
+        font-size: 10px;
+    }
+    /*tarjetas*/
+    .tarjeta {
+        padding: 24px;
+    }
+    /*perfil profesional*/
+    .perfil-contenido {
+        gap: 16px;
+    }
+    .perfil-texto p {
+        font-size: 13px;
+    }
+    /*especialidades*/
+    .especialidades-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .especialidad {
+        padding: 18px 15px;
+    }
+    /*formacion*/
+    .formacion-item {
+        gap: 14px;
+    }
+    .formacion-item h3 {
+        font-size: 14px;
+    }
+    /*experiencia laboral*/
+    .experiencia-intro {
+        padding: 17px;
+        gap: 12px;
+    }
+    .linea-tiempo {
+        padding-left: 25px;
+    }
+    .experiencia-item h3 {
+        font-size: 14px;
+    }
+    /*docencia*/
+    .docencia-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .docencia-card {
+        padding: 13px;
+    }
+    /*postulaciones*/
+    .postulacion {
+        gap: 13px;
+        padding: 13px;
+    }
+}
+
+/*Responsive Celulares*/
+@media (max-width: 767px) {
+    /*contenedor*/
+    .contenedor {
+        width: 92%;
+        margin: 20px auto;
+        gap: 16px;
+    }
+    /*portada*/
+    .portada {
+        min-height: auto;
+        padding: 25px 18px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .foto-perfil {
+        width: 155px;
+        height: 180px;
+    }
+    .portada-texto {
+        width: 100%;
+    }
+    .portada-texto h1 {
+        font-size: 25px;
+        overflow-wrap: anywhere;
+    }
+    .subtitulo {
+        font-size: 10px;
+    }
+    .cargo {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    /*indicadores*/
+    .indicadores {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .indicador {
+        min-height: 75px;
+        padding: 15px 20px;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .indicador > i {
+        font-size: 25px;
+        width: 30px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    .indicador strong {
+        font-size: 18px;
+    }
+    .indicador span {
+        font-size: 11px;
+    }
+    /*tarjetas*/
+    .tarjeta {
+        padding: 20px 16px;
+        border-radius: 5px;
+    }
+    .titulo-seccion {
+        margin-bottom: 18px;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .introduccion {
+        font-size: 12px;
+    }
+    /*perfil*/
+    .perfil-contenido {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .perfil-texto {
+        width: 100%;
+        min-width: 0;
+    }
+    .perfil-texto p {
+        font-size: 13px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+    /*especialidades*/
+    .especialidades-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .especialidad {
+        padding: 17px;
+    }
+    .especialidad-icono {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 12px;
+        font-size: 19px;
+    }
+    .especialidad h3 {
+        font-size: 14px;
+    }
+    .especialidad p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+    /*formacion academica*/
+    .formacion-item {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 0;
+    }
+    .formacion-icono {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+    .formacion-item h3 {
+        font-size: 13px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+    /*experiencia laboral*/
+    .experiencia-intro {
+        align-items: flex-start;
+        gap: 10px;
+        padding: 14px 12px;
+        margin-bottom: 22px;
+    }
+    .experiencia-icono {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+    .experiencia-intro h3 {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .experiencia-intro p {
+        font-size: 12px;
+    }
+    .linea-tiempo {
+        margin-left: 5px;
+        padding-left: 20px;
+    }
+    .experiencia-item {
+        padding-bottom: 23px;
+    }
+    .punto-tiempo {
+        left: -27px;
+        width: 11px;
+        height: 11px;
+    }
+    .experiencia-categoria {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+    .experiencia-item h3 {
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+    .experiencia-item p {
+        font-size: 12px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+    .experiencia-item .institucion {
+        font-size: 11px;
+    }
+    /*docencia*/
+    .docencia-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .docencia-card {
+        padding: 17px;
+    }
+    .docencia-card h3 {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+    .docencia-card p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+    /*postulaciones*/
+    .postulaciones-lista {
+        gap: 12px;
+    }
+    .postulacion {
+        align-items: flex-start;
+        gap: 11px;
+        padding: 14px 11px;
+    }
+    .postulacion-icono {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+    .postulacion h3 {
+        font-size: 13px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+    .postulacion p {
+        font-size: 12px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+    .postulacion-fecha {
+        font-size: 11px;
+    }
+}

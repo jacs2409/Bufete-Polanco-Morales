@@ -23,6 +23,7 @@
             </div>
         </div>
         <nav class="menu">
+            <a href="#inicio">INICIO</a>
             <a href="#historia">NUESTRO BUFETE</a>
             <a href="#especialidades">ESPECIALIDADES</a>
             <a href="#servicios">SERVICIOS</a>
@@ -36,7 +37,7 @@
     <!--Contenido-->
     <main class="contenedor">
         <!--Portada Principal-->
-        <div class="portada">
+        <div class="portada" id="inicio">
             <div class="abogados">
                 <img src="./assets/abogados.jpg" alt="foto de los abogados">
             </div>
@@ -44,8 +45,8 @@
                 <h2>AMÉN<br>
                 A LA<br>
                 JUSTICIA</h2>
-                <a class="etiqueta" href="#">Dr. Polanco CV</a>
-                <a class="etiqueta" href="#">Licda. Morales CV</a>
+                <a class="etiqueta" href="./cvdoctor.html">Dr. Polanco CV</a>
+                <a class="etiqueta" href="./cvlicda.html">Licda. Morales CV</a>
             </div>
         </div>
 
@@ -254,17 +255,62 @@
         </article>
     </main>
 
-    <!--Pie de pagina-->
+    <!--footer-->
     <footer class="pie" id="contacto">
-        <div class="logo-pie">
-            <img src="./assets/logo.png" alt="Logo del Bufete Jurídico Polanco Morales">
+        <div class="pie-contenido">
+            <!-- Identidad del bufete -->
+            <div class="pie-marca">
+                <div class="logo-pie">
+                    <img src="./assets/logo.png" alt="Logo del Bufete Jurídico Polanco Morales">
+                </div>
+                <h3>Bufete Jurídico<br>Polanco Morales</h3>
+                <p>
+                    Compromiso, estrategia y excelencia jurídica
+                    al servicio de nuestros clientes.
+                </p>
+            </div>
+            <!-- Información de contacto -->
+            <div class="pie-contacto">
+                <h3>Contáctanos</h3>
+                <a href="tel:+50232845018">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Celular 1: +502 3284 5018</span>
+                </a>
+                <a href="tel:+50238671610">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Celular 2: +502 3867 1610</span>
+                </a>
+                <a href="tel:+50223625828">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Oficina: +502 2362 5828</span>
+                </a>
+                <a href="mailto:bufetejuridicopolancomorales@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>bufetejuridicopolancomorales@gmail.com</span>
+                </a>
+            </div>
+            <!-- Redes sociales -->
+            <div class="pie-redes">
+                <h3>Síguenos</h3>
+                <p>
+                    Mantente en contacto con nuestro bufete
+                    a través de nuestras redes sociales.
+                </p>
+                <a class="red-social"
+                href="https://www.facebook.com/share/1MGmmnEC4C/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+            </div>
         </div>
-        <div class="contacto">
-            <p>☎ +502 3284 5018</p>
-            <p>✉ info@bufete.com</p>
-        </div>
-        <div class="derechos">
-            <p>© 2026 Bufete Jurídico Estratégico. Todos los derechos reservados.</p>
+        <!-- Derechos reservados -->
+        <div class="pie-inferior">
+            <p>
+                © 2026 Bufete Jurídico Polanco Morales.
+                Todos los derechos reservados.
+            </p>
         </div>
     </footer>
 

@@ -1,0 +1,410 @@
+@import url('./variables.css');
+
+/*contenedor main*/
+.contenedor {
+    width: 92%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/*perfil*/
+.portada {
+    width: 100%;
+    min-height: 280px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: var(--bg-color-tarjeta);
+    border: 1px solid var(--border-color-n);
+    border-top: 3px solid var(--color-dorado);
+    box-shadow: var(--sombra);
+}
+
+.foto-perfil {
+    position: relative;
+    width: 200px;
+    height: 230px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 2px solid var(--color-dorado);
+    border-radius: 5px;
+    background: var(--color-azul-claro);
+}
+
+.foto-perfil img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portada-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.subtitulo {
+    color: var(--color-dorado);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.portada-texto h1 {
+    margin: 8px 0 12px;
+    color: var(--color-azul-oscuro);
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.cargo {
+    max-width: 520px;
+    color: var(--color-letra);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/*datos destacados*/
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.indicador {
+    min-height: 90px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: var(--bg-color-tarjeta);
+    border: 1px solid var(--border-color-n);
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+}
+
+.indicador > i {
+    color: var(--color-dorado);
+    font-size: 27px;
+}
+
+.indicador div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.indicador strong {
+    color: var(--color-azul-oscuro);
+    font-size: 19px;
+}
+
+.indicador span {
+    color: var(--color-gris);
+    font-size: 11px;
+}
+
+/*config tarjetas*/
+.tarjeta {
+    width: 100%;
+    padding: 28px;
+    background-color: var(--bg-color-tarjeta);
+    border: 1px solid var(--border-color-n);
+    border-radius: 6px;
+    box-shadow: var(--sombra);
+    scroll-margin-top: 20px;
+}
+
+.titulo-seccion {
+    margin-bottom: 22px;
+    color: var(--color-azul-oscuro);
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 3px;
+    margin-top: 9px;
+    background-color: var(--color-dorado);
+}
+
+.introduccion {
+    margin: -8px 0 15px;
+    color: var(--color-gris);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/*introduccion personal*/
+.perfil-contenido {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.perfil-texto p {
+    flex: 1;
+    margin-bottom: 12px;
+    color: var(--color-letra);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/*especialidades y servicios*/
+.especialidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.especialidad {
+    padding: 20px 17px;
+    border: 1px solid var(--border-color-n);
+    border-radius: 5px;
+    background: #fff;
+    transition: border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.especialidad:hover {
+    border-color: var(--color-dorado);
+    transform: translateY(-3px);
+}
+
+.especialidad-icono {
+    width: 43px;
+    height: 43px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-azul-claro);
+    border-radius: 5px;
+    color: var(--color-dorado);
+    font-size: 21px;
+}
+
+.especialidad h3 {
+    margin-bottom: 10px;
+    color: var(--color-azul-oscuro);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.especialidad p {
+    color: var(--color-letra);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/*formacion academica*/
+.formacion-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacion-item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color-n);
+}
+
+.formacion-icono {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dorado);
+    background: var(--color-azul-claro);
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.formacion-item h3 {
+    color: var(--color-azul-oscuro);
+    font-size: 15px;
+}
+
+/*experiencia profesional*/
+.experiencia-intro {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: var(--color-azul-claro);
+    border-left: 3px solid var(--color-dorado);
+    border-radius: 3px;
+}
+
+.experiencia-icono {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dorado);
+    font-size: 26px;
+}
+
+.experiencia-intro h3 {
+    margin-bottom: 5px;
+    color: var(--color-azul-oscuro);
+    font-size: 15px;
+}
+
+.experiencia-intro p {
+    color: var(--color-letra);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.linea-tiempo {
+    position: relative;
+    margin-left: 10px;
+    padding-left: 28px;
+    border-left: 2px solid #e7e0d3;
+}
+
+.experiencia-item {
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.experiencia-item:last-child {
+    padding-bottom: 0;
+}
+
+.punto-tiempo {
+    position: absolute;
+    top: 4px;
+    left: -35px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--color-dorado);
+    background: white;
+    border-radius: 50%;
+}
+
+.experiencia-categoria {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: var(--color-dorado);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.experiencia-item h3 {
+    margin-bottom: 7px;
+    color: var(--color-azul-oscuro);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.experiencia-item p {
+    color: var(--color-letra);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.experiencia-item .institucion {
+    margin-bottom: 7px;
+    color: var(--color-letra);
+    font-size: 12px;
+    font-style: italic;
+}
+
+/*docencia*/
+.docencia-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.docencia-card {
+    padding: 15px;
+    border: 1px solid var(--border-color-n);
+    border-radius: 5px;
+}
+
+.docencia-card h3 {
+    margin-bottom: 10px;
+    color: var(--color-azul-oscuro);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.docencia-card p {
+    margin-bottom: 10px;
+    color: var(--color-letra);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/*postulaciones*/
+.postulaciones-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.postulacion {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 15px;
+    border: 1px solid var(--border-color-n);
+    border-radius: 5px;
+}
+
+.postulacion-icono {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dorado);
+    background: var(--color-azul-claro);
+    border-radius: 5px;
+    font-size: 21px;
+}
+
+.postulacion h3 {
+    margin-bottom: 8px;
+    color: var(--color-azul-oscuro);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.postulacion p {
+    color: var(--color-letra);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.postulacion-fecha {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--color-dorado);
+    font-size: 12px;
+    font-weight: bold;
+}
